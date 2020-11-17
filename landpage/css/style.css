@@ -94,14 +94,6 @@
   font-style: normal;
 }
 
-body {
-  font-size: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto;
-}
-
 .header {
   width: 100%;
 }
@@ -141,4 +133,12 @@ body {
   color: #000;
   text-decoration: none;
   padding-top: 17px;
+}
+
+body {
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
 }
