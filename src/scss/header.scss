@@ -12,7 +12,6 @@
     margin: auto;
     height: 50px;
     background-color: #E5E5E5;
-    width: 100%;
   }
 
   &-links {
@@ -28,12 +27,31 @@
     font-size: 14px;
     line-height: 16px;
   }
-
+  &-service{
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+  }
   &__links {
     color: #000;
     text-decoration: none;
     padding-top: 17px;
+    &__service{
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+    }
   }
+
 }
 .search-form{
   position: relative;
@@ -70,17 +88,7 @@ button {
     margin-right: 56px;
   }
   &__button{
-    margin-top: 40px;
-    width: 170px;
-    height: 40px;
     border: 2px solid #F13C6E;
-    box-sizing: border-box;
-    border-radius: 40px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
   }
   &__span{
     margin: auto;

@@ -1,0 +1,44 @@
+.rectangle {
+  background-image: url(../img/Rectangle.png);
+  width: 1920px;
+  height: 604px;
+  padding-left: 405px;
+}
+.img{
+  &-heading{
+    padding-top: 192px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    color: #FFFFFF;
+  }
+  &-text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+  &__button{
+    border: 2px solid #fff;
+    color: #fff;
+  }
+}
+.submit{
+  &__button{
+    margin-top: 40px;
+    width: 170px;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 40px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    cursor: pointer;
+  }
+}
