@@ -1,6 +1,8 @@
+main{
+  background-color: #EFEFEF;
+}
 .rectangle {
   background-image: url(../img/Rectangle.png);
-  width: 1920px;
   height: 604px;
   padding-left: 405px;
 }
@@ -40,5 +42,57 @@
     font-size: 14px;
     line-height: 16px;
     cursor: pointer;
+  }
+}
+.product{
+  height: 363px;
+  width: 255px;
+  background-color: #fff;
+  margin-right: 30px;
+  margin-bottom: 100px;
+  &-heading{
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  &-place{
+    display: flex;
+  }
+  &-price{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin: 10px 100px;
+  }
+  &-img{
+    height: 166px;
+    width: 125px;
+    margin: 15px 65px;
+  }
+  &-text{
+    margin: 15px 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+  &__button{
+    background-color:#F13C6E;
+    color:#fff;
+    width: 130px;
+    height: 35px;
+    border-radius: 30px;
+    margin: 20px 62px;
   }
 }
