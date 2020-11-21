@@ -65,3 +65,33 @@
     justify-content: space-between;
   }
 }
+@media (max-width: 1199px) {
+  .categories-popular{
+    margin: auto;
+  }
+  .hidden{
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .contacts-adress{
+    margin:auto;
+    margin-top: 112px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hidden2{
+    display: none;
+  }
+  .contacts-footerphone{
+    margin-top: 110px;
+  }
+}
+
+@media (max-width: 500px) {
+  .contacts-footerphone{
+    display: none;
+  }
+}

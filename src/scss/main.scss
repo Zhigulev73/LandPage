@@ -1,6 +1,9 @@
 main{
   background-color: #EFEFEF;
 }
+.section{
+  margin-top: 50px;
+}
 .rectangle {
   background-image: url(../img/Rectangle.png);
   height: 604px;
@@ -95,4 +98,140 @@ main{
     border-radius: 30px;
     margin: 20px 62px;
   }
+}
+.card{
+  display: flex;
+  width: 540px;
+  height: 212px;
+  background-color: #F13C6E;
+  &-section{
+    display: flex;
+    justify-content: space-between;
+  }
+  &-heading{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-top: 35px;
+    margin-bottom: 25px;
+  }
+  &-search{
+    background-color: #fff;
+    border-radius: 30px;
+    width: 225px;
+    height: 35px;
+    margin-top: 15px;
+    padding-left: 15px;
+  }
+  &-text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+  &-button{
+    border: 2px solid #fff;
+    color: #fff;
+    height: 35px;
+    margin-top: 15px;
+  }
+  &-img{
+    margin-top: 27px;
+  }
+}
+.info{
+  margin-left: 40px;
+  margin-right: 65px;
+}
+.impuls{
+  display: grid;
+  width: 1110px;
+  height: 357px;
+  background-color: #fff;
+  grid-template-columns: 277px 277px 277px 277px;
+  grid-template-rows: 119px 119px 119px;
+  &-img{
+    margin-left: 60px;
+    margin-top: 35px;
+  }
+}
+@media (max-width: 1199px){
+.product-last{
+  display: none;
+}
+.impuls{
+  width: 1000px;
+  grid-template-columns: 250px 250px 250px 250px;
+}
+}
+@media (max-width: 991px){
+  .product-heading{
+    text-align: center;
+  }
+  .product-first{
+    display: none;
+  }
+  .product{
+    margin: auto;
+  }
+  
+.impuls{
+  width: 800px;
+  grid-template-columns: 200px 200px 200px 200px;
+  &-img{
+    margin-left: 20px;
+  }
+}
+.card-section{
+  flex-direction: column;
+  justify-content: center;
+}
+.card{
+  margin: auto;
+  margin-top: 20px;
+}
+}
+@media (max-width: 768px){
+  .card{
+    width: 400px; 
+  }
+  .card-img{
+    display: none;
+  }
+  .rectangle{
+    height: 450px;
+    padding-left: 210px;
+  }
+.impuls {
+  width: 550px;
+  grid-template-columns: 190px 190px 190px;
+  &-img {
+    margin-left: 20px;
+  }
+}
+.hidden-first{
+  display: none;
+}
+}
+@media (max-width: 500px){
+  .product-second{
+    display: none;
+  }
+.impuls {
+  width: 400px;
+  height: 250px;
+  grid-template-columns: 190px 190px ;
+
+  &-img {
+    margin-left: 15px;
+  }
+}
+.hidden-second{
+  display: none;
+}
 }

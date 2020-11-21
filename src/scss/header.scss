@@ -99,7 +99,10 @@ button {
     color: #F13C6E;
   }
   &__search{
-    margin-top: 40px;
+    margin-left: 20px;
+    width: 100%;
+    height: 42px;
+    padding-left: 15px;
     &__button{
       margin: auto;
       height: 42px;
@@ -116,4 +119,40 @@ button {
       }
     }
   }
+}
+@media (max-width: 1199px) {
+.contacts__button{
+  display: none;
+}
+}
+@media (max-width: 991px){
+.contacts__span{
+  margin-right: auto;
+}
+.menu-links{
+  padding: 0 100px;
+}
+}
+@media (max-width: 768px){
+.contacts__span{
+  display: none;
+}
+.contacts__phone{
+  margin: auto;
+}
+.menu-service{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+}
+@media (max-width: 500px){
+.search-form{
+  display: none;
+}
+.contacts{
+  justify-content: space-between;
+  &__phone{
+    margin: 40px 0;
+  }
+}
 }
