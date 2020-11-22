@@ -674,17 +674,81 @@ main {
   margin: auto;
 }
 
+.menu {
+  position: fixed;
+  top: 50px;
+  width: 100%;
+  background-color: #000;
+  z-index: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 0;
+}
+
+.menu_active {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.menu-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .menu-bg {
-  margin: auto;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 99;
   height: 50px;
   background-color: #E5E5E5;
 }
 
+.menu-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  width: 40px;
+}
+
+.menu-button:hover {
+  cursor: pointer;
+}
+
+.menu-button__line {
+  height: 2px;
+  background-color: #000;
+  display: block;
+  width: 20px;
+  margin: 2px 0;
+}
+
 .menu-links {
-  padding-right: 250px;
-  padding-left: 250px;
+  width: 700px;
   margin: auto;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -701,7 +765,7 @@ main {
 .menu-service {
   margin-right: 150px;
   margin-left: 150px;
-  margin-top: 70px;
+  margin-top: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -727,6 +791,8 @@ main {
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
+  color: #fff;
+  padding-bottom: 15px;
 }
 
 .search-form {
@@ -749,6 +815,7 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 130px;
 }
 
 .contacts__img {
