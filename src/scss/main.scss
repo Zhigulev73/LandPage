@@ -219,19 +219,41 @@ main{
 }
 }
 @media (max-width: 500px){
-  .product-second{
+  .img{
+    &-heading{
+      margin: auto;
+      padding: 10px;
+    }
+    &-text{
+      margin: auto;
+      padding: 10px;
+    }
+    &__button{
+      margin-left: 10px;
+    }
+  }
+  .rectangle{
+    height: 250px;
+    padding: 20px;
+  }
+  .product{
+    margin-bottom: 20px;
+    &-second{
+      display: none;
+    }
+    &-heading{
+      margin: 10px auto;
+    }
+  }
+  .impuls {
+    width: 400px;
+    height: 250px;
+    grid-template-columns: 190px 190px ;
+    &-img {
+      margin-left: 15px;
+    }
+  }
+  .hidden-second{
     display: none;
   }
-.impuls {
-  width: 400px;
-  height: 250px;
-  grid-template-columns: 190px 190px ;
-
-  &-img {
-    margin-left: 15px;
-  }
-}
-.hidden-second{
-  display: none;
-}
 }

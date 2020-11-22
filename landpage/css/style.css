@@ -1021,8 +1021,35 @@ button {
 }
 
 @media (max-width: 500px) {
+  .img-heading {
+    margin: auto;
+    padding: 10px;
+  }
+
+  .img-text {
+    margin: auto;
+    padding: 10px;
+  }
+
+  .img__button {
+    margin-left: 10px;
+  }
+
+  .rectangle {
+    height: 250px;
+    padding: 20px;
+  }
+
+  .product {
+    margin-bottom: 20px;
+  }
+
   .product-second {
     display: none;
+  }
+
+  .product-heading {
+    margin: 10px auto;
   }
 
   .impuls {
@@ -1039,6 +1066,11 @@ button {
     display: none;
   }
 
+  .menu-links {
+    margin: auto;
+    padding: 0 5px;
+  }
+
   .search-form {
     display: none;
   }
@@ -1050,7 +1082,32 @@ button {
   }
 
   .contacts__phone {
-    margin: 40px 0;
+    margin: 40px 40px;
+  }
+
+  .contacts__img {
+    margin: 20px 40px;
+  }
+
+  .menu-service {
+    margin: auto;
+    margin-left: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .menu__links__service {
+    width: 30%;
+  }
+
+  .contacts-links {
+    margin-left: 10px;
   }
 
   .contacts-footerphone {

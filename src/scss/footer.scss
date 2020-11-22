@@ -91,7 +91,12 @@
 }
 
 @media (max-width: 500px) {
-  .contacts-footerphone{
-    display: none;
+  .contacts{
+    &-links{
+      margin-left: 10px;
+    }
+    &-footerphone{
+      display: none;
+    }
   }
 }

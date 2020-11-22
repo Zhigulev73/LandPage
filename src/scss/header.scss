@@ -146,13 +146,30 @@ button {
 }
 }
 @media (max-width: 500px){
-.search-form{
-  display: none;
-}
-.contacts{
-  justify-content: space-between;
-  &__phone{
-    margin: 40px 0;
+  .menu-links{
+    margin: auto;
+    padding: 0 5px;
   }
-}
+  .search-form{
+    display: none;
+  }
+  .contacts{
+    justify-content: space-between;
+    &__phone{
+     margin: 40px 40px;
+    }
+    &__img{
+     margin: 20px 40px;
+    }
+  }
+  .menu-service{
+    margin: auto;
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .menu__links__service{
+    width: 30%;
+  }
 }
