@@ -935,17 +935,17 @@ button {
 }
 
 .contacts {
+  margin-top: 112px;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .contacts__links {
   margin-right: 20px;
-  margin-top: 112px;
 }
 
 .contacts__adress {
   margin-left: 205px;
-  margin-top: 112px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -955,13 +955,8 @@ button {
 }
 
 .contacts__footerphone {
-  margin-top: 110px;
   margin-left: 90px;
   margin-right: 40px;
-}
-
-.contacts__footerbutton {
-  margin-top: 100px;
 }
 
 .contacts-bg {
@@ -1161,6 +1156,7 @@ button {
   }
 
   .contacts__footerphone {
+    margin: auto;
     margin-top: 110px;
   }
 }

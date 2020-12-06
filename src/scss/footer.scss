@@ -23,14 +23,14 @@
   }
 }
 .contacts {
+  margin-top: 112px;
   margin-bottom: 40px;
+  text-align: center;
   &__links{
     margin-right: 20px;
-    margin-top: 112px;
   }
   &__adress{
     margin-left: 205px;
-    margin-top: 112px;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -39,12 +39,8 @@
     color: #000000;
   }
   &__footerphone{
-    margin-top: 110px;
     margin-left: 90px;
     margin-right: 40px;
-  }
-  &__footerbutton{
-    margin-top: 100px;
   }
   &-bg{
     margin: auto;
@@ -86,6 +82,7 @@
     display: none;
   }
   .contacts__footerphone {
+    margin:auto;
     margin-top: 110px;
   }
 }
