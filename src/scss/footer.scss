@@ -1,6 +1,6 @@
 .categories{
   display: flex;
-  &-purchases{
+  &__purchases{
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -22,13 +22,13 @@
     color: #000000;
   }
 }
-.contacts{
+.contacts {
   margin-bottom: 40px;
-  &-links{
-    margin-right: 32px;
+  &__links{
+    margin-right: 20px;
     margin-top: 112px;
   }
-  &-adress{
+  &__adress{
     margin-left: 205px;
     margin-top: 112px;
     font-family: Roboto;
@@ -38,7 +38,7 @@
     line-height: 16px;
     color: #000000;
   }
-  &-footerphone{
+  &__footerphone{
     margin-top: 110px;
     margin-left: 90px;
     margin-right: 40px;
@@ -51,7 +51,7 @@
     height: 64px;
     background-color: #E5E5E5;
   }
-  &-rights{
+  &__rights{
     padding-top: 18px;
     font-family: Roboto;
     font-style: normal;
@@ -75,7 +75,7 @@
 }
 
 @media (max-width: 991px) {
-  .contacts-adress{
+  .contacts__adress {
     margin:auto;
     margin-top: 112px;
   }
@@ -85,17 +85,17 @@
   .hidden2{
     display: none;
   }
-  .contacts-footerphone{
+  .contacts__footerphone {
     margin-top: 110px;
   }
 }
 
 @media (max-width: 500px) {
-  .contacts{
-    &-links{
+  .contacts {
+    &__links{
       margin-left: 10px;
     }
-    &-footerphone{
+    &__footerphone{
       display: none;
     }
   }

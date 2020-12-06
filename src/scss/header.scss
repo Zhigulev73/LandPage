@@ -2,7 +2,6 @@
   max-width: 1110px;
   margin: auto;
 }
-
 .menu {
   position: fixed;
   top: 50px;
@@ -59,33 +58,33 @@
     font-size: 14px;
     line-height: 16px;
   }
-  &-service{
-    margin-right: 150px;
-    margin-left: 150px;
-    margin-top: 0px;
-    display: flex;
-    justify-content: space-between;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-  }
   &__links {
     color: #000;
     text-decoration: none;
     padding-top: 17px;
-    &__service{
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 19px;
-      color: #fff;
-      padding-bottom: 15px;
-    }
   }
+}
+.service {
+  margin-right: 150px;
+  margin-left: 150px;
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-between;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
 
+  &__link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    padding-bottom: 15px;
+  }
 }
 .search-form{
   position: relative;
@@ -101,10 +100,10 @@ button {
   outline: none;
   background: transparent;
 }
-.contacts {
+.company {
   display: flex;
   margin-top: 130px;
-  &__img{
+  &__logo{
     width: 80px;
     height: 80px;
     margin-right: 20px;
@@ -125,7 +124,7 @@ button {
   &__button{
     border: 2px solid #F13C6E;
   }
-  &__span{
+  &__name{
     margin: auto;
     margin-left: 0;
     margin-top: 40px;
@@ -160,29 +159,29 @@ button {
   }
 }
 @media (max-width: 1199px) {
-.contacts__button{
-  display: none;
-}
+  .company__button{
+    display: none;
+  }
 }
 @media (max-width: 991px){
-.contacts__span{
-  margin-right: auto;
-}
-.menu-links{
-  padding: 0 100px;
-}
+  .company__name{
+    margin-right: auto;
+  }
+  .menu-links{
+    padding: 0 100px;
+  }
 }
 @media (max-width: 768px){
-.contacts__span{
-  display: none;
-}
-.contacts__phone{
-  margin: auto;
-}
-.menu-service{
-  margin-left: 5px;
-  margin-right: 5px;
-}
+  .company__name{
+    display: none;
+  }
+  .company__phone{
+    margin: auto;
+  }
+  .service{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }
 @media (max-width: 500px){
   .menu-links{
@@ -192,23 +191,23 @@ button {
   .search-form{
     display: none;
   }
-  .contacts{
+  .company{
     justify-content: space-between;
     &__phone{
      margin: 40px 40px;
     }
-    &__img{
+    &__logo{
      margin: 20px 40px;
     }
   }
-  .menu-service{
+  .service{
     margin: auto;
     margin-left: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .menu__links__service{
+  .service__link{
     width: 30%;
   }
 }

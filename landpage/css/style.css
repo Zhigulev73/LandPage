@@ -390,13 +390,18 @@ main {
   margin-top: 50px;
 }
 
-.rectangle {
+.stock {
   height: 590px;
   width: 100%;
   position: relative;
 }
 
-.img-heading {
+.stock__chair {
+  width: 100%;
+  height: 100%;
+}
+
+.stock__title {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -408,7 +413,7 @@ main {
   left: 205px;
 }
 
-.img-text {
+.stock__text {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -420,7 +425,7 @@ main {
   left: 205px;
 }
 
-.img__button {
+.stock__button {
   border: 2px solid #fff;
   color: #fff;
   position: absolute;
@@ -443,6 +448,18 @@ main {
   cursor: pointer;
 }
 
+.submit__button:hover {
+  color: #fff;
+  background-color: #000;
+  border: none;
+}
+
+.submit__button:focus {
+  color: #fff;
+  background-color: #000;
+  border: 2px solid #828282;
+}
+
 .product {
   height: 363px;
   width: 255px;
@@ -451,7 +468,7 @@ main {
   margin-bottom: 100px;
 }
 
-.product-heading {
+.product-title {
   margin-top: 80px;
   margin-bottom: 40px;
   font-family: Roboto;
@@ -467,7 +484,7 @@ main {
   display: flex;
 }
 
-.product-price {
+.product__price {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -479,13 +496,13 @@ main {
   margin: 10px 100px;
 }
 
-.product-img {
+.product__img {
   height: 166px;
   width: 125px;
   margin: 15px 65px;
 }
 
-.product-text {
+.product__text {
   margin: 15px 30px;
   font-family: Roboto;
   font-style: normal;
@@ -522,7 +539,7 @@ main {
           justify-content: space-between;
 }
 
-.card-heading {
+.card__title {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -533,7 +550,7 @@ main {
   margin-bottom: 25px;
 }
 
-.card-search {
+.card__search {
   background-color: #fff;
   border-radius: 30px;
   width: 225px;
@@ -542,7 +559,7 @@ main {
   padding-left: 15px;
 }
 
-.card-text {
+.card__text {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -551,14 +568,14 @@ main {
   color: #FFFFFF;
 }
 
-.card-button {
+.card__button {
   border: 2px solid #fff;
   color: #fff;
   height: 35px;
   margin-top: 15px;
 }
 
-.card-img {
+.card__img {
   margin-top: 27px;
 }
 
@@ -576,7 +593,7 @@ main {
   grid-template-rows: 119px 119px 119px;
 }
 
-.impuls-img {
+.impuls__img {
   margin-left: 60px;
   margin-top: 35px;
 }
@@ -770,7 +787,13 @@ main {
   line-height: 16px;
 }
 
-.menu-service {
+.menu__links {
+  color: #000;
+  text-decoration: none;
+  padding-top: 17px;
+}
+
+.service {
   margin-right: 150px;
   margin-left: 150px;
   margin-top: 0px;
@@ -787,13 +810,7 @@ main {
   line-height: 16px;
 }
 
-.menu__links {
-  color: #000;
-  text-decoration: none;
-  padding-top: 17px;
-}
-
-.menu__links__service {
+.service__link {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -819,21 +836,21 @@ button {
   background: transparent;
 }
 
-.contacts {
+.company {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 130px;
 }
 
-.contacts__img {
+.company__logo {
   width: 80px;
   height: 80px;
   margin-right: 20px;
   margin-top: 20px;
 }
 
-.contacts__phone {
+.company__phone {
   margin-top: 50px;
   font-family: Roboto;
   font-style: normal;
@@ -846,11 +863,11 @@ button {
   margin-right: 56px;
 }
 
-.contacts__button {
+.company__button {
   border: 2px solid #F13C6E;
 }
 
-.contacts__span {
+.company__name {
   margin: auto;
   margin-left: 0;
   margin-top: 40px;
@@ -863,14 +880,14 @@ button {
   color: #F13C6E;
 }
 
-.contacts__search {
+.company__search {
   margin-left: 20px;
   width: 100%;
   height: 42px;
   padding-left: 15px;
 }
 
-.contacts__search__button {
+.company__search__button {
   margin: auto;
   height: 42px;
   width: 42px;
@@ -880,7 +897,7 @@ button {
   cursor: pointer;
 }
 
-.contacts__search__button:before {
+.company__search__button:before {
   content: "\f002";
   font-family: FontAwesome;
   font-size: 16px;
@@ -893,7 +910,7 @@ button {
   display: flex;
 }
 
-.categories-purchases {
+.categories__purchases {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -921,12 +938,12 @@ button {
   margin-bottom: 40px;
 }
 
-.contacts-links {
-  margin-right: 32px;
+.contacts__links {
+  margin-right: 20px;
   margin-top: 112px;
 }
 
-.contacts-adress {
+.contacts__adress {
   margin-left: 205px;
   margin-top: 112px;
   font-family: Roboto;
@@ -937,7 +954,7 @@ button {
   color: #000000;
 }
 
-.contacts-footerphone {
+.contacts__footerphone {
   margin-top: 110px;
   margin-left: 90px;
   margin-right: 40px;
@@ -953,7 +970,7 @@ button {
   background-color: #E5E5E5;
 }
 
-.contacts-rights {
+.contacts__rights {
   padding-top: 18px;
   font-family: Roboto;
   font-style: normal;
@@ -973,7 +990,7 @@ button {
 }
 
 @media (max-width: 1199px) {
-  .rectangle {
+  .stock {
     height: 500px;
   }
 
@@ -986,22 +1003,22 @@ button {
     grid-template-columns: 250px 250px 250px 250px;
   }
 
-  .img-heading {
+  .stock__title {
     top: 100px;
     left: 100px;
   }
 
-  .img-text {
+  .stock__text {
     top: 200px;
     left: 100px;
   }
 
-  .img__button {
+  .stock__button {
     top: 270px;
     left: 100px;
   }
 
-  .contacts__button {
+  .company__button {
     display: none;
   }
 
@@ -1015,23 +1032,23 @@ button {
 }
 
 @media (max-width: 991px) {
-  .rectangle {
+  .stock {
     height: 400px;
   }
 
-  .img-heading {
+  .stock__title {
     top: 50px;
   }
 
-  .img-text {
+  .stock__text {
     top: 150px;
   }
 
-  .img__button {
+  .stock__button {
     top: 200px;
   }
 
-  .product-heading {
+  .product-title {
     text-align: center;
   }
 
@@ -1067,7 +1084,7 @@ button {
     margin-top: 20px;
   }
 
-  .contacts__span {
+  .company__name {
     margin-right: auto;
   }
 
@@ -1075,7 +1092,7 @@ button {
     padding: 0 100px;
   }
 
-  .contacts-adress {
+  .contacts__adress {
     margin: auto;
     margin-top: 112px;
   }
@@ -1090,23 +1107,23 @@ button {
     display: none;
   }
 
-  .rectangle {
+  .stock {
     height: 300px;
   }
 
-  .img-heading {
+  .stock__title {
     font-size: 30px;
     top: 10px;
     left: 50px;
   }
 
-  .img-text {
+  .stock__text {
     top: 80px;
     left: 50px;
     font-size: 12px;
   }
 
-  .img__button {
+  .stock__button {
     top: 120px;
     left: 50px;
     height: 30px;
@@ -1126,15 +1143,15 @@ button {
     display: none;
   }
 
-  .contacts__span {
+  .company__name {
     display: none;
   }
 
-  .contacts__phone {
+  .company__phone {
     margin: auto;
   }
 
-  .menu-service {
+  .service {
     margin-left: 5px;
     margin-right: 5px;
   }
@@ -1143,27 +1160,27 @@ button {
     display: none;
   }
 
-  .contacts-footerphone {
+  .contacts__footerphone {
     margin-top: 110px;
   }
 }
 
 @media (max-width: 500px) {
-  .img-heading {
+  .stock__title {
     margin: auto;
     left: 10px;
   }
 
-  .img-text {
+  .stock__text {
     margin: auto;
     left: 10px;
   }
 
-  .img__button {
+  .stock__button {
     left: 10px;
   }
 
-  .rectangle {
+  .stock {
     height: 250px;
   }
 
@@ -1175,7 +1192,7 @@ button {
     display: none;
   }
 
-  .product-heading {
+  .product-title {
     margin: 10px auto;
   }
 
@@ -1202,21 +1219,21 @@ button {
     display: none;
   }
 
-  .contacts {
+  .company {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
 
-  .contacts__phone {
+  .company__phone {
     margin: 40px 40px;
   }
 
-  .contacts__img {
+  .company__logo {
     margin: 20px 40px;
   }
 
-  .menu-service {
+  .service {
     margin: auto;
     margin-left: 30px;
     display: -webkit-box;
@@ -1229,15 +1246,15 @@ button {
             justify-content: space-between;
   }
 
-  .menu__links__service {
+  .service__link {
     width: 30%;
   }
 
-  .contacts-links {
+  .contacts__links {
     margin-left: 10px;
   }
 
-  .contacts-footerphone {
+  .contacts__footerphone {
     display: none;
   }
 }
